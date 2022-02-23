@@ -19,4 +19,4 @@ WORKDIR /opt/papyruscs
 
 RUN dotnet publish PapyrusCs -c Debug --self-contained --runtime linux-x64
 
-ENTRYPOINT /opt/papyruscs/PapyrusCs/bin/Debug/netcoreapp3.1/linux-x64/PapyrusCs
+ENTRYPOINT ["/opt/papyruscs/PapyrusCs/bin/Debug/netcoreapp3.1/linux-x64/PapyrusCs"]
